@@ -162,6 +162,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<fusionteam huburn="a.YnVzaW5lc3M6aGF3aGFtYnVyZzE2MA" projecturn="a.YnVzaW5lc3M6aGF3aGFtYnVyZzE2MCMyMDIwMDMxODI3NjA2OTk3Ng" folderUrn="urn:adsk.wipprod:fs.folder:co.goNDv-9XQGeF0P4ml8q09Q" urn="urn:adsk.wipprod:dm.lineage:v_c-DKWzSUawachcDsm0LA"  versionUrn="urn:adsk.wipprod:fs.file:vf.v_c-DKWzSUawachcDsm0LA?version=1" camFileUrn="" camFileVersionUrn="" lastpublishedchangeguid="babf9d0b-71c7-e20c-f1f4-92fc3aea1251"/>
 <libraries>
 <library name="STM32F767ZIT6">
 <description>&lt;STMICROELECTRONICS - STM32F767ZIT6 - MCU, 32BIT, CORTEX-M7, 216MHZ, LQFP-144&lt;/b&gt;&lt;p&gt;
@@ -12084,13 +12085,6 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/473460001_sd.pdf"&gt; Datas
 <label x="55.82" y="-44.65" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="CS" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PB9"/>
-<wire x1="38.1" y1="96.52" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
-<label x="38.1" y="99.06" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
 <net name="N$53" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PF13"/>
@@ -12683,11 +12677,18 @@ Source: &lt;a href="http://www.molex.com/pdm_docs/sd/473460001_sd.pdf"&gt; Datas
 <label x="7.58" y="30.68" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="CS" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PF11"/>
+<wire x1="58.42" y1="-30.48" x2="58.42" y2="-43.18" width="0.1524" layer="91"/>
+<label x="58.42" y="-35.56" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
 <net name="RST" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB6"/>
-<wire x1="48.26" y1="96.52" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
-<label x="48.06" y="99.42" size="1.778" layer="95" rot="R90"/>
+<pinref part="IC1" gate="G$1" pin="PF12"/>
+<wire x1="60.96" y1="-30.48" x2="60.96" y2="-43.18" width="0.1524" layer="91"/>
+<label x="60.96" y="-38.1" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
